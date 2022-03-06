@@ -10,6 +10,10 @@ jobs:
 
   build:
 
+    strategy:
+      matrix:
+        configuration: [Release]
+
     runs-on: windows-latest  # For a list of available runner types, refer to
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
 
@@ -42,7 +46,7 @@ jobs:
 
     # Create the app package by building and packaging the Windows Application Packaging project
     - name: Create the app package
-      run: msbuild $env:Wap_Project_Path /p:Configuration=Release;AppxBundle=$env:Appx_Bundle;AppxBundlePlatforms="$env:Appx_Bundle_Platforms" /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:AppxPackageSigningEnabled=false
+      run: msbuild $env:Wap_Project_Path /p:Configuration=Release;AppxBundle=Always;AppxBundlePlatforms="x86|x64" /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:AppxPackageSigningEnabled=false
       env:
         Appx_Bundle: Always
         Appx_Bundle_Platforms: x86|x64
