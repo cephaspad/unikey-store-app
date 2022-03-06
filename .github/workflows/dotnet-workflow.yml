@@ -1,10 +1,10 @@
-name: To Microsoft Store
+name: publish-to-microsoft-store
 
 on:
   push:
-    tags: ['*']
+    branches: ["main"]
   pull_request:
-    tags: ['*']
+    branches: ["main"]
 
 jobs:
 
