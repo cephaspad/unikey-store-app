@@ -2,9 +2,9 @@ name: To Microsoft Store
 
 on:
   push:
-    tags: ['*']
+    branches: ["main", "test"]
   pull_request:
-    tags: ['*']
+    branches: ["main", "test"]
 
 jobs:
 
