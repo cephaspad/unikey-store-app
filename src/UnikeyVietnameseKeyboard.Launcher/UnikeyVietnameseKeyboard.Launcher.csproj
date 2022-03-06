@@ -1,21 +1,31 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RootNamespace>UnikeyVietnameseKeyboard</RootNamespace>
-    <AssemblyName>UnikeyVietnameseKeyboard</AssemblyName>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>UnikeyVietnameseKeyboard</RootNamespace>
+		<AssemblyName>UnikeyVietnameseKeyboard</AssemblyName>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Apps\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Apps\**">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+	<PropertyGroup>
+		<UnikeyReleaseUrl>https://www.unikey.org/assets/release/</UnikeyReleaseUrl>
+		<Unikey86FileName>unikey43RC5-200929-win32.zip</Unikey86FileName>
+		<Unikey64FileName>unikey43RC5-200929-win64.zip</Unikey64FileName>
+		<UnikeyApp86Root>Apps\x86</UnikeyApp86Root>
+		<UnikeyApp64Root>Apps\x64</UnikeyApp64Root>
+	</PropertyGroup>
+	
+	<Target Name="DownloadUnikey86ToProject" BeforeTargets="Build" Condition="!Exists($(UnikeyApp86Root))">
+		<DownloadFile SourceUrl="$(UnikeyReleaseUrl)$(Unikey86FileName)" DestinationFolder="$(ProjectDir)" DestinationFileName="$(Unikey86FileName)" />
+		<Unzip SourceFiles="$(ProjectDir)$(Unikey86FileName)" DestinationFolder="$(ProjectDir)$(UnikeyApp86Root)"/>
+		<Delete Files="$(ProjectDir)$(Unikey86FileName)" />
+	</Target>
+	
+	<Target Name="DownloadUnikey64ToProject" BeforeTargets="Build" Condition="!Exists($(UnikeyApp64Root))">
+		<DownloadFile SourceUrl="$(UnikeyReleaseUrl)$(Unikey64FileName)" DestinationFolder="$(ProjectDir)" DestinationFileName="$(Unikey64FileName)" />
+		<Unzip SourceFiles="$(ProjectDir)$(Unikey64FileName)" DestinationFolder="$(ProjectDir)$(UnikeyApp64Root)"/>
+		<Delete Files="$(ProjectDir)$(Unikey64FileName)" />
+	</Target>
 </Project>
