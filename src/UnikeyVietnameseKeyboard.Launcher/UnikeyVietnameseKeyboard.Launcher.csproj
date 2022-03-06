@@ -48,6 +48,7 @@
 		<Nullable>enable</Nullable>
 		<RootNamespace>UnikeyVietnameseKeyboard</RootNamespace>
 		<AssemblyName>UnikeyVietnameseKeyboard</AssemblyName>
+		<Platforms>AnyCPU;x64;x86</Platforms>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -60,13 +61,13 @@
 	
 	<Target Name="DownloadUnikey86ToProject" BeforeTargets="Build" Condition="!Exists($(UnikeyApp86Root))">
 		<DownloadFile SourceUrl="$(UnikeyReleaseUrl)$(Unikey86FileName)" DestinationFolder="$(ProjectDir)" DestinationFileName="$(Unikey86FileName)" />
-		<Unzip SourceFiles="$(ProjectDir)$(Unikey86FileName)" DestinationFolder="$(ProjectDir)$(UnikeyApp86Root)"/>
+		<Unzip SourceFiles="$(ProjectDir)$(Unikey86FileName)" DestinationFolder="$(ProjectDir)$(UnikeyApp86Root)" />
 		<Delete Files="$(ProjectDir)$(Unikey86FileName)" />
 	</Target>
 	
 	<Target Name="DownloadUnikey64ToProject" BeforeTargets="Build" Condition="!Exists($(UnikeyApp64Root))">
 		<DownloadFile SourceUrl="$(UnikeyReleaseUrl)$(Unikey64FileName)" DestinationFolder="$(ProjectDir)" DestinationFileName="$(Unikey64FileName)" />
-		<Unzip SourceFiles="$(ProjectDir)$(Unikey64FileName)" DestinationFolder="$(ProjectDir)$(UnikeyApp64Root)"/>
+		<Unzip SourceFiles="$(ProjectDir)$(Unikey64FileName)" DestinationFolder="$(ProjectDir)$(UnikeyApp64Root)" />
 		<Delete Files="$(ProjectDir)$(Unikey64FileName)" />
 	</Target>
 </Project>
