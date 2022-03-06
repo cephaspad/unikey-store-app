@@ -54,7 +54,7 @@ jobs:
         Configuration: ${{ matrix.configuration }}
         
     # Upload the MSIX package to Windows Store
-    - uses: isaacrlevin/windows-store-action@latest
+    - uses: isaacrlevin/windows-store-action@1.0
       name: Publish to Store
       with:
         tenant-id: ${{ secrets.AZURE_AD_TENANT_ID }}
