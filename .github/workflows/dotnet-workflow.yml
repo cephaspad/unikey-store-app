@@ -62,4 +62,4 @@ jobs:
         client-id: ${{ secrets.AZURE_AD_APPLICATION_CLIENT_ID }}
         client-secret: ${{ secrets.AZURE_AD_APPLICATION_SECRET }}
         app-id: ${{ secrets.STORE_APP_ID }}
-        package-path: "${{ env.Wap_Project_Directory }}/AppPackages/UnikeyVietnameseKeyboard.Packaging_1.0.0.0_x86_x64_bundle.appxupload"
+        package-path: "${{ env.Wap_Project_Directory }}\\AppPackages\\UnikeyVietnameseKeyboard.Packaging_1.0.0.0_x86_x64_bundle.appxupload"
