@@ -9,7 +9,7 @@
   <Identity
     Name="4248CephasPAD.UnikeyVietnameseKeyboard-StoreEditio"
     Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E"
-    Version="1.0.4.0" />
+    Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>Unikey Vietnamese Keyboard - Store Edition</DisplayName>
