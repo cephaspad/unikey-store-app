@@ -7,13 +7,13 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="3fbb4b3d-f6d3-44bf-8ad6-1d3543ed4f72"
-    Publisher="CN=cepha"
-    Version="1.0.0.0" />
+    Name="4248CephasPAD.UnikeyVietnameseKeyboard-StoreEditio"
+    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E"
+    Version="1.0.4.0" />
 
   <Properties>
-    <DisplayName>UnikeyVietnameseKeyboard.Packaging</DisplayName>
-    <PublisherDisplayName>cepha</PublisherDisplayName>
+    <DisplayName>Unikey Vietnamese Keyboard - Store Edition</DisplayName>
+    <PublisherDisplayName>Cephas PAD</PublisherDisplayName>
     <Logo>Images\StoreLogo.png</Logo>
   </Properties>
 
@@ -31,19 +31,18 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="UnikeyVietnameseKeyboard.Packaging"
-        Description="UnikeyVietnameseKeyboard.Packaging"
+        DisplayName="Unikey Vietnamese Keyboard"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
-        Square44x44Logo="Images\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" />
+        Square44x44Logo="Images\Square44x44Logo.png" Description="UniKey is the most popular Vietnamese keyboard for Windows. The core UniKey Vietnamese Input Method is also the engine for many Vietnamese keyboards in Linux, macOS and iOS. UniKey is free of charge. Source code for the UniKey Vietnamese Input Method is distributed under the GNU General Public License.">
+        <uap:DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png"  ShortName="Unikey" Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png"/>
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
 
   <Capabilities>
-    <Capability Name="internetClient" />
     <rescap:Capability Name="runFullTrust" />
+    <Capability Name="internetClient"/>
   </Capabilities>
 </Package>
