@@ -20,7 +20,7 @@ jobs:
     env:
       Solution_Name: unikey-store-app.sln
       Wap_Project_Directory: src\UnikeyVietnameseKeyboard.Packaging
-      Wap_Project_Path: src\UnikeyVietnameseKeyboard.Packaging\VietnameseKeyboard.Packaging.wapproj
+      Wap_Project_Path: src\UnikeyVietnameseKeyboard.Packaging\UnikeyVietnameseKeyboard.Packaging.wapproj
 
     steps:
     - name: Checkout
