@@ -52,6 +52,7 @@ jobs:
         Appx_Bundle_Platforms: x86|x64
         Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}
+        AppxPackageSigningEnabled: false
         
     # Upload the MSIX package to Windows Store
     - uses: isaacrlevin/windows-store-action@1.0
@@ -61,4 +62,4 @@ jobs:
         client-id: ${{ secrets.AZURE_AD_APPLICATION_CLIENT_ID }}
         client-secret: ${{ secrets.AZURE_AD_APPLICATION_SECRET }}
         app-id: ${{ secrets.STORE_APP_ID }}
-        package-path: "${{ env.Wap_Project_Directory }}/AppPackages/*.appxupload"
+        package-path: "${{ env.Wap_Project_Directory }}/AppPackages/UnikeyVietnameseKeyboard.Packaging_1.0.0.0_x86_x64_bundle.appxupload"
