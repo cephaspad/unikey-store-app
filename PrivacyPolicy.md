@@ -11,4 +11,4 @@ This product does not access, collect, or transmit personal information (data th
 
 This product does not share or transmit the data that user created by using this product.
 
-&copy; 2021 [Pham Kim Long](https://unikey.org), and published to Microsoft Store by **Cephas PAD** *(contact@cephaspad.com)*
+&copy; 2021 [Pham Kim Long](https://unikey.org), and published to Microsoft Store by **Cephas PAD** *(me@cephaspad.com)*
