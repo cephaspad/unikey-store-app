@@ -6,11 +6,11 @@
   IgnorableNamespaces="uap uap10 rescap">
   <!--Package created by MSIX Packaging Tool version: 1.2022.110.0-->
   <Identity Name="4248CephasPAD.UnikeyVietnameseKeyboard-StoreEditio"
-    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E" Version="1.0.0.0" />
+    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E" Version="1.0.0.0" ProcessorArchitecture="x64" />
   <Properties>
     <DisplayName>Unikey Vietnamese Keyboard - Store Edition</DisplayName>
     <PublisherDisplayName>Cephas PAD</PublisherDisplayName>
-    <Description>None</Description>
+    <Description>UniKey is the most popular Vietnamese keyboard for Windows. The core UniKey Vietnamese Input Method is also the engine for many Vietnamese keyboards in Linux, macOS and iOS. UniKey is free of charge. Source code for the UniKey Vietnamese Input Method is distributed under the GNU General Public License.</Description>
     <Logo>Assets\StoreLogo.png</Logo>
     <uap10:PackageIntegrity>
       <uap10:Content Enforcement="on" />
