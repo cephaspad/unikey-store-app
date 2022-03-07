@@ -2,11 +2,12 @@
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+  xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5" 
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
   IgnorableNamespaces="uap uap10 rescap">
   <!--Package created by MSIX Packaging Tool version: 1.2022.110.0-->
   <Identity Name="4248CephasPAD.UnikeyVietnameseKeyboard-StoreEditio"
-    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E" Version="4.3.4.0" ProcessorArchitecture="x64" />
+    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E" Version="2022.3.8.0" ProcessorArchitecture="x64" />
   <Properties>
     <DisplayName>Unikey Vietnamese Keyboard - Store Edition</DisplayName>
     <PublisherDisplayName>Cephas PAD</PublisherDisplayName>
@@ -35,6 +36,11 @@
           Square310x310Logo="Assets\UNIKEYNT-Square310x310Logo.png"
           Square71x71Logo="Assets\UNIKEYNT-Square71x71Logo.png" />
       </uap:VisualElements>
+      <Extensions>
+        <uap5:Extension Category="windows.startupTask" Executable="VFS\AppVPackageDrive\UnikeyNT.exe"   EntryPoint="Windows.FullTrustApplication">  
+          <uap5:StartupTask TaskId="{CB3E7961-763E-475F-8847-89DE6E4358AB}" Enabled="true" DisplayName="Unikey Vietnamese Keyboard" />  
+        </uap5:Extension>
+      </Extensions>
     </Application>
   </Applications>
 
