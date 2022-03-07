@@ -17,15 +17,11 @@ jobs:
       with:
         fetch-depth: 0
 
-    # Install the .NET Core workload
-    - name: Install .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 6.0.x
-
     # Create the app package by building and packaging the Windows Application Packaging project
     - name: Create the app package
-      run: build.ps1
+      shell: pwsh
+      run: |
+        .\build.ps1
         
     # Upload the MSIX package to Windows Store
     - uses: isaacrlevin/windows-store-action@1.0
