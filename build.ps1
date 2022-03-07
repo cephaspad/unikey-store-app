@@ -18,6 +18,6 @@ MakePri new /pr . /cf "..\config\priconfig.xml"
 
 Set-Location $solutionPath
 New-Item -Path "AppPackages" -ItemType "Directory" -Force
-MakeAppX pack /d ".\src" /p ".\AppPackages\UnikeyVietnameseKeyboard64.msix"
+MakeAppX pack /d ".\src" /p ".\AppPackages\UnikeyVietnameseKeyboard.msix"
 
 Set-Location $solutionPath
