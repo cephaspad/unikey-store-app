@@ -6,7 +6,7 @@
   IgnorableNamespaces="uap uap10 rescap">
   <!--Package created by MSIX Packaging Tool version: 1.2022.110.0-->
   <Identity Name="4248CephasPAD.UnikeyVietnameseKeyboard-StoreEditio"
-    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E" Version="2022.3.7.0" ProcessorArchitecture="x64" />
+    Publisher="CN=17F76690-B56C-43AF-A6B8-D6626331B90E" Version="4.3.4.0" ProcessorArchitecture="x64" />
   <Properties>
     <DisplayName>Unikey Vietnamese Keyboard - Store Edition</DisplayName>
     <PublisherDisplayName>Cephas PAD</PublisherDisplayName>
