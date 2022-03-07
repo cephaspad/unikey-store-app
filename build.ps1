@@ -10,7 +10,7 @@ $unikey64FileName = "unikey43RC5-200929-win64.zip"
 Set-Location $sourcePath
 $unikeyFileName = $unikey64FileName
 Invoke-WebRequest -Uri $unikeyReleaseRoot$unikeyFileName -OutFile $unikeyFileName
-Expand-Archive -Path $unikeyFileName -DestinationPath $appVDrive --Force
+Expand-Archive -Path $unikeyFileName -DestinationPath $appVDrive -Force
 Remove-Item $unikeyFileName
 
 Set-Location $sourcePath
