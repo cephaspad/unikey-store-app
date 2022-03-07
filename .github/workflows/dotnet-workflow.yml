@@ -2,7 +2,7 @@ name: publish-to-microsoft-store
 
 on:
   push:
-    branches: ["master", "remove_launcher"]
+    branches: ["master" ]
   pull_request:
     branches: ["master"]
 
