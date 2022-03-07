@@ -2,9 +2,7 @@ name: publish-to-microsoft-store
 
 on:
   push:
-    branches: ["master" ]
-  pull_request:
-    branches: ["master"]
+    tags: ["deployments/*"]
 
 jobs:
 
