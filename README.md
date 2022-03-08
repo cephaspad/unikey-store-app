@@ -1,5 +1,4 @@
-## Unikey Vietnamese Keyboard for Windows Store
-### ![Application on Microsoft Store](https://unikey-store-app-status.cephaspad.com/status)
+## Unikey Vietnamese Keyboard for Windows Store ![Application on Microsoft Store](https://unikey-store-app-status.cephaspad.com/status)
 
 UniKey is the most popular Vietnamese keyboard for Windows. The core UniKey Vietnamese Input Method is also the engine for many Vietnamese keyboards in Linux, macOS and iOS. UniKey is free of charge. Source code for the UniKey Vietnamese Input Method is distributed under the GNU General Public License.
 
