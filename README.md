@@ -11,4 +11,4 @@ Please note: **[unikey.org](https://unikey.org) is the only official website of 
 
 :globe_with_meridians: Microsoft Store:  [Unikey Vietnamese Keyboard](https://www.microsoft.com/store/apps/9N4SDQCH559B)
 
-:construction_worker: Publisher: @cephaspad
+:construction_worker: Publisher: [@cephaspad](https://github.com/cephaspad)
