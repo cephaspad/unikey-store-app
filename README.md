@@ -9,6 +9,6 @@ Please note: **[unikey.org](https://unikey.org) is the only official website of 
 
 :bust_in_silhouette: Unikey's owner: **Pham Kim Long**
 
-:globe_with_meridians: Microsoft Store:  [Unikey Vietnamese Keyboard](https://www.microsoft.com/store/apps/9N4SDQCH559B)
+:globe_with_meridians: Microsoft Store:  [Unikey Vietnamese Keyboard](https://www.microsoft.com/store/apps/9N4SDQCH559B) ![Application on Microsoft Store](https://unikey-store-app-status.cephaspad.com/status)
 
 :construction_worker: Publisher: [@cephaspad](https://github.com/cephaspad)
