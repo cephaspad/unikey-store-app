@@ -4,8 +4,8 @@ $sourcePath = $solutionPath + "\src"
 $appVDrive = $sourcePath + ".\VFS\AppVPackageDrive"
 
 $unikeyReleaseRoot = "https://www.unikey.org/assets/release/"
-$unikey64FileName = "unikey43RC5-200929-win64.zip"
-# $unikey86FileName = "unikey43RC5-200929-win32.zip"
+$unikey64FileName = "unikey45RC1-230808-win64.zip"
+# $unikey86FileName = "unikey45RC1-230808-win32.zip"
 
 Set-Location $sourcePath
 $unikeyFileName = $unikey64FileName
